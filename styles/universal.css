@@ -1,0 +1,65 @@
+:root {
+  /* FONTS */
+  --OpenSans: "Open Sans";
+  --Playfair: "Playfair Display", serif;
+  --font0: 160px;
+  --font1: 65px;
+  --font2: 31px;
+  --font3: 21px;
+  --font4: 16px;
+  --font5: 14px;
+  --font6: 12px;
+  --font7: 10px;
+
+  /* COLORS  (NOT EDITED WITH THEME)*/
+  --dark: rgb(17, 17, 17);
+  --white: rgb(255, 255, 255);
+  --orange: rgb(232, 191, 93);
+
+  /* COLORS  (EDITED WITH THEME)*/
+  --color1: rgb(17, 17, 17);
+  --color2: rgb(255, 255, 255);
+  --color3: rgb(102, 102, 102);
+  --color4: rgb(185, 185, 185);
+  --color5: rgb(232, 191, 93);
+  --color6: rgb(255, 255, 255);
+  --color7: rgb(185, 185, 185);
+
+  /* BORDER */
+  --border: solid 1px var(--orange);
+}
+
+[data-theme="dark"] {
+  /* FONTS */
+  --color1: rgb(232, 191, 93);
+  --color2: rgb(17, 17, 17);
+  --color3: rgb(232, 191, 93);
+  --color4: rgb(232, 191, 93);
+  --color5: rgb(232, 191, 93);
+  --color6: rgb(232, 191, 93);
+  --color7: rgb(252, 176, 0);
+}
+
+[font-size="big-text"] {
+  /* FONTS */
+  --font0: 180px;
+  --font1: 70px;
+  --font2: 35px;
+  --font3: 25px;
+  --font4: 18px;
+  --font5: 16px;
+  --font6: 14px;
+  --font7: 12px;
+}
+
+[font-size="biggest-text"] {
+  /* FONTS */
+  --font0: 260px;
+  --font1: 75px;
+  --font2: 41px;
+  --font3: 31px;
+  --font4: 20px;
+  --font5: 18px;
+  --font6: 16px;
+  --font7: 14px;
+}
