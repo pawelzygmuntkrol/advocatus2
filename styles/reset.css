@@ -81,6 +81,7 @@ select {
 html {
   font-family: var(--OpenSans);
   scroll-behavior: smooth;
+  margin: 0;
 }
 
 * {
