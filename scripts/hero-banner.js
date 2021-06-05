@@ -1,79 +1,47 @@
-{
-  const sliders = document.querySelectorAll(".slider");
-  // interval between switching images
-  const interval = 2800;
-  const animDuration = 600;
+const banners = {
+  1: {
+    image: "./../photos/hero-banner/stock-photo-177211577.png",
+  },
 
-  for (let i = 0; i < sliders.length; ++i) {
-    const slider = sliders[i];
-    const dots = slider.querySelector(".dots");
-    const sliderImgs = slider.querySelectorAll(".img");
+  2: {
+    image: "./../photos/hero-banner/image-1-2.jpg",
+  },
 
-    let currImg = 0;
-    let prevImg = sliderImgs.length - 1;
-    let intrvl;
-    let timeout;
+  3: {
+    image: "./../photos/hero-banner/image-1-3.jpg",
+  }
+};
 
-    // Creates dots and add listeners to them
-    for (let i = 0; i < sliderImgs.length; ++i) {
-      const dot = document.createElement("div");
-      dot.classList.add("dot");
-      dots.appendChild(dot);
-      dot.addEventListener("click", dotClick.bind(null, i), false);
-    }
+let id = 1;
 
-    const allDots = dots.querySelectorAll(".dot");
-    allDots[0].classList.add("active-dot");
-
-    sliderImgs[0].style.left = "0";
-    timeout = setTimeout(() => {
-      animateSlider();
-      sliderImgs[0].style.left = "";
-      intrvl = setInterval(animateSlider, interval);
-    }, interval - animDuration);
-
-    /**
-     * Animates images
-     * @param {number} [nextImg] - index of next image to show
-     * @param {boolean} [right = false] - animate to right
-     */
-    function animateSlider(nextImg, right) {
-      if (!nextImg) nextImg = currImg + 1 < sliderImgs.length ? currImg + 2 : 1;
-
-      --nextImg;
-      sliderImgs[prevImg].style.animationName = "";
-
-      if (!right) {
-        sliderImgs[nextImg].style.animationName = "leftNext";
-        sliderImgs[currImg].style.animationName = "leftCurr";
-      } else {
-        sliderImgs[nextImg].style.animationName = "rightNext";
-        sliderImgs[currImg].style.animationName = "rightCurr";
-      }
-
-      prevImg = currImg;
-      currImg = nextImg;
-
-      currDot = allDots[currImg];
-      currDot.classList.add("active-dot");
-      prevDot = allDots[prevImg];
-      prevDot.classList.remove("active-dot");
-    }
-
-    /**
-     * Decides if animate to left or right and highlights clicked dot
-     * @param {number} num - index of clicked dot
-     */
-    function dotClick(num) {
-      if (num == currImg) return false;
-
-      clearTimeout(timeout);
-      clearInterval(intrvl);
-
-      if (num > currImg) animateSlider(num + 1);
-      else animateSlider(num + 1, true);
-
-      intrvl = setInterval(animateSlider, interval);
+// Function that changes image based on chosen dot and also changes the dot color.
+function changeBanner(id) {
+  document.querySelector(".hero-banner").style.backgroundImage = `url(${banners[id].image})`;
+  for (let i = 1; i <= Object.keys(banners).length; i++) {
+    if (i === id) {
+      document.querySelector(`.hero-banner__dot-${i}`).style.color = "var(--color7)";
+    } else {
+      document.querySelector(`.hero-banner__dot-${i}`).style.color = "var(--color3)";
     }
   }
 }
+
+changeBanner(1);
+
+
+// Manual change of the banner.
+for (let i = 1; i <= document.querySelectorAll(".hero-banner__dot").length; i++) {
+  document.querySelector(`.hero-banner__dot-${i}`).addEventListener("click", () => {
+    changeBanner(i);
+    id = i;
+  });
+}
+
+// Automatic change of the banner.
+setInterval(() => {
+  id > Object.keys(banners).length ? (id = 1) : (id = id);
+  changeBanner(id);
+  id++;
+}, 3000);
+
+  

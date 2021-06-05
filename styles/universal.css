@@ -1,65 +1,120 @@
-:root {
-  /* FONTS */
-  --OpenSans: "Open Sans";
-  --Playfair: "Playfair Display", serif;
-  --font0: 160px;
-  --font1: 65px;
-  --font2: 31px;
-  --font3: 21px;
-  --font4: 16px;
-  --font5: 14px;
-  --font6: 12px;
-  --font7: 10px;
+/* USED IN HERO-BANNER, ABOUT-US, PRACTISE-AREA, ATTORNEYS, CLIENTS, PUBLICATIONS, FAQ, CONTACT, FOOTER */
 
-  /* COLORS  (NOT EDITED WITH THEME)*/
-  --dark: rgb(17, 17, 17);
-  --white: rgb(255, 255, 255);
-  --orange: rgb(232, 191, 93);
-
-  /* COLORS  (EDITED WITH THEME)*/
-  --color1: rgb(17, 17, 17);
-  --color2: rgb(255, 255, 255);
-  --color3: rgb(102, 102, 102);
-  --color4: rgb(185, 185, 185);
-  --color5: rgb(232, 191, 93);
-  --color6: rgb(255, 255, 255);
-  --color7: rgb(185, 185, 185);
-
-  /* BORDER */
-  --border: solid 1px var(--orange);
+/* PLAYFAIR FONT */
+.hero-banner__name,
+.hero-banner__button,
+.about-us__description-header,
+.about-us__description-paragraph,
+.history__header,
+.expertise__header,
+.practis-area__description-header,
+.practis-area__description-paragraph,
+.grid-item__header,
+.attorney__description-header,
+.attorney__description-paragraph,
+.list__name,
+.clients__description-header,
+.clients__description-paragraph,
+.opinions__quote-mark,
+.opinions__name,
+.publications__description-header,
+.publications__description-paragraph,
+.article__title,
+.faq__description-header,
+.faq__description-paragraph,
+.contact__description-header,
+.contact__description-paragraph,
+.contact__button,
+.footer__copyright-text {
+  font-family: var(--Playfair);
 }
 
-[data-theme="dark"] {
-  /* FONTS */
-  --color1: rgb(232, 191, 93);
-  --color2: rgb(17, 17, 17);
-  --color3: rgb(232, 191, 93);
-  --color4: rgb(232, 191, 93);
-  --color5: rgb(232, 191, 93);
-  --color6: rgb(232, 191, 93);
-  --color7: rgb(252, 176, 0);
+/* USED IN ABOUT-US, PRACTISE-AREA, ATTORNEYS, CLIENTS, PUBLICATIONS, FAQ, CONTACT */
+
+/* DESCRIPTION */
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  min-height: 100px;
+  width: 100vw;
+  padding-left: 20px;
+  border-left: var(--border);
+  margin-bottom: 70px;
 }
 
-[font-size="big-text"] {
-  /* FONTS */
-  --font0: 180px;
-  --font1: 70px;
-  --font2: 35px;
-  --font3: 25px;
-  --font4: 18px;
-  --font5: 16px;
-  --font6: 14px;
-  --font7: 12px;
+.description__number {
+  height: 0;
+  color: var(--color4);
+  font-size: var(--font0);
+  font-weight: 500;
+  line-height: 0.15;
+  opacity: 0.2;
 }
 
-[font-size="biggest-text"] {
-  /* FONTS */
-  --font0: 260px;
-  --font1: 75px;
-  --font2: 41px;
-  --font3: 31px;
-  --font4: 20px;
-  --font5: 18px;
-  --font6: 16px;
-  --font7: 14px;
+.description__header {
+  font-size: var(--font2);
+  font-weight: 500;
+  line-height: 0.8;
+}
+
+.description__header--light {
+  color: var(--color1);
+}
+
+.description__header--dark {
+  color: var(--color6);
+}
+
+.description__paragraph {
+  max-width: 760px;
+  margin-top: 5px;
+  font-size: var(--font3);
+  line-height: 1.1;
+}
+
+.description__paragraph--light {
+  color: var(--color3);
+}
+
+.description__paragraph--dark {
+  color: var(--color4);
+}
+
+@media (max-width: 425px) {
+  
+  .description__header {
+    font-size: var(--font3);
+  }
+
+  .description__number {
+    font-size: var(--font0);
+    line-height: 0.20;
+  }
+  
+  .description__paragraph {
+    font-size: var(--font5);
+  }
+}
+
+/* WRAPPER */
+
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 1100px;
+  margin: 100px auto 50px;
+}
+
+@media (max-width: 1024px) {
+  
+  .wrapper {
+    width: 100%;
+    padding: 0 3rem;
+  }
+
 }

@@ -1,7 +1,3 @@
-.practis-area__description-header, .practis-area__description-paragraph, .grid-item__header {
-  font-family: var(--Playfair);
-}
-
 .practis-area {
   display: flex;
   width: 100vw;
@@ -12,46 +8,10 @@
 
 .practis-area__wrapper {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 1170px;
-  margin: 100px auto 0;
-}
-
-.practis-area__number {
-  font-size: var(--font0);
-  height: 0;
-  line-height: 0.15;
-  opacity: 0.2;
-  font-weight: 500;
-  color: var(--color4);
-}
-
-.practis-area__description {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: column;
-  min-height: 100px;
-  padding-left: 20px;
-  border-left: var(--border);
-  margin-bottom: 90px;
-}
-  
-.practis-area__description-header {
-  color: var(--color6);
-  font-size: var(--font2);
-  line-height: 0.8;
-  font-weight: 500;
-}
-  
-.practis-area__description-paragraph {
-  font-size: var(--font3);
-  color: var(--color4);
-  width: 65%;
-  line-height: 1.1;
-  margin-top: 5px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: auto;
 }
 
 .practis-area__grid {
@@ -62,15 +22,15 @@
   grid-template-areas:
     ". ."
     ". .";
-  padding: 0 5%;
-  color: var(--color6);
+  max-width: 1000px;
   margin-bottom: 40px;
+  color: var(--color6);
 }
 
 .fa-handshake, .fa-wrench, .fa-desktop, .fa-home {
+  padding: 5px 30px 0 0;
   color: var(--color5);
   font-size: 45px;
-  padding: 5px 30px 0 0;
 }
 
 .practis-area__grid-item {
@@ -80,8 +40,8 @@
 }
 
 .grid-item__header {
-  font-size: var(--font3);
   margin-bottom: 30px;
+  font-size: var(--font3);
   font-weight: 500;
 }
 
@@ -89,32 +49,10 @@
   font-size: var(--font5);
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
-  
-  .practis-area__wrapper {
-    width: 100%;
-    padding: 0 3rem;
-  }
-
-  .practis-area__description-paragraph {
-    width: 100%;
-  }
-}
-
 @media (max-width: 1023px) {
 
   .practis-area {
     height: auto;
-  }
-  
-  .practis-area__wrapper {
-    width: auto;
-    padding: 0 3rem;
-    
-  }
-
-  .practis-area__description-paragraph {
-    width: 100%;
   }
 
   .practis-area__grid {
@@ -123,21 +61,13 @@
     align-items: center;
     flex-direction: column;
   }
+}
 
-  .practis-area__wrapper {
-    width: 100%;
-    margin-bottom: 40px;
-  }
-  
-  @media (max-width: 481px) {
-  
-    .practis-area__description-header {
-      font-size: var(--font3);
-    }
-    
-    .practis-area__description-paragraph {
-      font-size: var(--font4);
-    }
+@media (max-width: 374px) {
+
+  .fa-handshake, .fa-wrench, .fa-desktop, .fa-home {
+    padding: 5px 15px 0 0;
+    font-size: 30px;
   }
 }
 

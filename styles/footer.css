@@ -10,7 +10,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: 1170px;
+  width: 1100px;
   margin: 0 auto;
   color: var(--color6);
 }
@@ -24,7 +24,6 @@
 
 .footer__copyright-text {
   color: var(--color4);
-  font-family: var(--Playfair);
 }
 
 .footer__social {
@@ -33,6 +32,15 @@
   align-items: center;
   font-size: var(--font4);
   width: 110px;
+}
+
+.fa-facebook-f:hover,
+.fa-twitter:hover,
+.fa-google-plus-g:hover,
+.fa-instagram:hover {
+  cursor: pointer;
+  padding-bottom: 5px;
+  border-bottom: solid 3px var(--orange);
 }
 
 @media (max-width: 1024px) {

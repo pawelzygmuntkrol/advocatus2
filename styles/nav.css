@@ -14,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1170px;
+  width: 1100px;
   margin: 0 auto;
 }
 
@@ -50,17 +50,21 @@
   font-size: var(--font5);
   letter-spacing: 1px;
   line-height: 45px;
-  color: var(--color1);
   font-weight: 400;
   font-family: "Open Sans";
   text-align: right;
+}
+
+.nav__button a {
+  color: var(--color1);
+  text-decoration: none;
 }
 
 .nav__button:hover {
   border-bottom: solid 5px var(--orange);
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (max-width: 1024px){
   
   .nav__wrapper {
     width: 100%;

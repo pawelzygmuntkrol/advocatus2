@@ -16,6 +16,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/variables.css">
     <link rel="stylesheet" href="./styles/universal.css">
     <link rel="stylesheet" href="./styles/accessibility.css">
     <link rel="stylesheet" href="./styles/nav.css">
@@ -33,64 +34,64 @@
   <body>
     <main>
       <!-- NAVIGATION -->
-      <nav class="nav">
-        <div class="nav__wrapper">
+      <header class="nav">
+        <nav class="nav__wrapper">
           <div class="nav__logo">
             <p class="nav__logo">
               ADVOCATUS<p style="color: var(--orange)">.</p>
             </p>
           </div>
-          <div class="nav__buttons">
-            <a href="#about-us" class="nav__button">
-              ABOUT US
-            </a>
-            <a href="#practis-area" class="nav__button">
-              PRACTICE AREA
-            </a>
-            <a href="#attorney" class="nav__button">
-              LAWYERS
-            </a>
-            <a href="#publications" class="nav__button">
-              PUBLICATIONS
-            </a>
-            <a href="#faq" class="nav__button">
-              FAQ
-            </a>
-            <a href="#contact" class="nav__button">
-              CONTACT
-            </a>
-          </div>
-        </div>
-      </nav>
+          <ul class="nav__buttons">
+            <li class="nav__button">
+              <a href="#about-us">ABOUT US</a>
+            </li>
+            <li class="nav__button">
+              <a href="#practis-area">PRACTICE AREA</a>
+            </li>
+            <li class="nav__button">
+              <a href="#attorney">LAWYERS</a>
+            </li>
+            <li class="nav__button">
+              <a href="#publications">PUBLICATIONS</a>
+            </li>
+            <li class="nav__button">
+              <a href="#faq">FAQ</a>
+            </li>
+            <li class="nav__button">
+              <a href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
       <!-- SIDENAV -->
       <i class="fas fa-bars"></i>
       <i class="fas fa-times"></i>
-
-      <div class="side-nav">
-        <div class="side-nav__wrapper">
-          <div class="side-nav__buttons">
-            <a href="#about-us" class="side-nav__button">
-              ABOUT US
-            </a>
-            <a href="#practis-area" class="side-nav__button">
-              PRACTICE AREA
-            </a>
-            <a href="#attorney" class="side-nav__button">
-              LAWYERS
-            </a>
-            <a href="#publications" class="side-nav__button">
-              PUBLICATIONS
-            </a>
-            <a href="#faq" class="side-nav__button">
-              FAQ
-            </a>
-            <a href="#contact" class="side-nav__button">
-              CONTACT
-            </a>
-          </div>
-        </div>
-      </div>
+      
+      <aside class="side-nav">
+        <nav class="side-nav__wrapper">
+          <ul class="side-nav__buttons">
+            <li class="side-nav__button">
+              <a href="#about-us">ABOUT US</a>
+            </li>
+            <li class="side-nav__button">
+              <a href="#practis-area">PRACTICE AREA</a>
+            </li>
+            <li class="side-nav__button">
+              <a href="#attorney">LAWYERS</a>
+            </li>
+            <li class="side-nav__button">
+              <a href="#publications">PUBLICATIONS</a>
+            </li>
+            <li class="side-nav__button">
+              <a href="#faq">FAQ</a>
+            </li>
+            <li class="side-nav__button">
+              <a href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
 
       <!-- HERO BANNER  -->
       <div class="hero-banner">
@@ -103,7 +104,13 @@
             <a href="#contact" class="hero-banner__link">Contact Me</a>
           </button>
         </div>
+        <ul class="hero-banner__dots">
+          <li class="hero-banner__dot hero-banner__dot-1">•</li>
+          <li class="hero-banner__dot hero-banner__dot-2">•</li>
+          <li class="hero-banner__dot hero-banner__dot-3">•</li>
+        </ul>
       </div>
+      <!--
       <div class="slider">
         <div class="imgs">
           <div class="img" style="left: 0;"> 
@@ -115,14 +122,15 @@
         </div>
         <div class="dots"></div>
       </div>
+              -->
 
       <!-- ABOUT US -->
-      <div class="about-us" id="about-us">
-        <div class="about-us__wrapper">
-          <div class="about-us__description">
-            <h2 class="about-us__description-header">About us</h2>
-            <h1 class="about-us__number">01</h1>
-            <p class="about-us__description-paragraph">We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experience.</p>
+      <section class="about-us" id="about-us">
+        <div class="wrapper">
+          <div class="description">
+            <h2 class="description__header description__header--light">About us</h2>
+            <h1 class="description__number">01</h1>
+            <p class="description__paragraph  description__paragraph--light">We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experience.</p>
           </div>
           <div class="about-us__history-and-expertise">
             <div class="history__wrapper">
@@ -146,92 +154,94 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Practis Area -->
-      <div class="practis-area" id="practis-area">
-        <div class="practis-area__wrapper">
-          <div class="practis-area__description">
-            <h2 class="practis-area__description-header">Practis Area</h2>
-            <h1 class="practis-area__number">02</h1>
-            <p class="practis-area__description-paragraph">We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.</p>
+      <section class="practis-area" id="practis-area">
+        <div class="wrapper">
+          <div class="description">
+            <h2 class="description__header description__header--dark">Practis Area</h2>
+            <h1 class="description__number">02</h1>
+            <p class="description__paragraph description__paragraph--dark">We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.</p>
           </div>
-          <div class="practis-area__grid">
-            <div class="practis-area__grid-item">
-              <i class="far fa-handshake"></i>
-              <div>
-                <h3 class="grid-item__header">Private Client Service</h3>
-                <p class="grid-item__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.</p>
+          <div class="practis-area__wrapper">
+            <div class="practis-area__grid">
+              <div class="practis-area__grid-item">
+                <i class="far fa-handshake"></i>
+                <div>
+                  <h3 class="grid-item__header">Private Client Service</h3>
+                  <p class="grid-item__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.</p>
+                </div>
               </div>
-            </div>
-            <div class="practis-area__grid-item">
-              <i class="fas fa-wrench"></i>
-              <div>
-                <h3 class="grid-item__header">LABOUR AND EMPLOYMENT</h3>
-                <p class="grid-item__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.</p>
+              <div class="practis-area__grid-item">
+                <i class="fas fa-wrench"></i>
+                <div>
+                  <h3 class="grid-item__header">LABOUR AND EMPLOYMENT</h3>
+                  <p class="grid-item__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.</p>
+                </div>
               </div>
-            </div>
-            <div class="practis-area__grid-item">
-              <i class="fas fa-desktop"></i>
-              <div>
-                <h3 class="grid-item__header">Cyber Sequre</h3>
-                <p class="grid-item__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.</p>
+              <div class="practis-area__grid-item">
+                <i class="fas fa-desktop"></i>
+                <div>
+                  <h3 class="grid-item__header">Cyber Sequre</h3>
+                  <p class="grid-item__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.</p>
+                </div>
               </div>
-            </div>
-            <div class="practis-area__grid-item">
-              <i class="fas fa-home"></i>
-              <div>
-                <h3 class="grid-item__header">Cyber Sequre</h3>
-                <p class="grid-item__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.</p>
+              <div class="practis-area__grid-item">
+                <i class="fas fa-home"></i>
+                <div>
+                  <h3 class="grid-item__header">Real Estate</h3>
+                  <p class="grid-item__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- MEET OUR ATTORNEY -->
-      <div class="attorney" id="attorney">
-        <div class="attorney__wrapper">
-          <div class="attorney__description">
-            <h2 class="attorney__description-header">Meet Our Attorney</h2>
-            <h1 class="about-us__number">03</h1>
-            <p class="attorney__description-paragraph">We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.</p>
+      <section class="attorney" id="attorney">
+        <div class="wrapper">
+          <div class="description">
+            <h2 class="description__header description__header--light">Meet Our Attorney</h2>
+            <h1 class="description__number">03</h1>
+            <p class="description__paragraph description__paragraph--light">We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.</p>
           </div>
           <div class="attorney__list">
             <div class="attorney__item">
-              <img src="./photos/attorney/stock-photo-177211577.png"/>
+              <img src="./photos/attorney/stock-photo-177211577.png" alt="photo of attorney"/>
               <p class="list__name">Adam Suarez</p>
               <p class="list__position">Attorney General</p>
             </div>
             <div class="attorney__item">
-              <img src="./photos/attorney/stock-photo-125023723.png"/>
+              <img src="./photos/attorney/stock-photo-125023723.png" alt="photo of attorney"/>
               <p class="list__name">Lina Suarez</p>
               <p class="list__position">Attorney General</p>
             </div>
             <div class="attorney__item">
-              <img src="./photos/attorney/stock-photo-140947125.png"/>
+              <img src="./photos/attorney/stock-photo-140947125.png" alt="photo of attorney"/>
               <p class="list__name">Jems Snow</p>
               <p class="list__position">Attorney General</p>
             </div>
             <div class="attorney__item">
-              <img src="./photos/attorney/stock-photo-137838227.png"/>
+              <img src="./photos/attorney/stock-photo-137838227.png" alt="photo of attorney"/>
               <p class="list__name">Linister White</p>
               <p class="list__position">Attorney General</p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- CLIENTS -->
-      <div class="clients" id="clients">
-        <div class="clients__wrapper">
-          <div class="clients__description">
-            <h2 class="clients__description-header">Our Clients Say</h2>
-            <h1 class="clients__number">04</h1>
-            <p class="clients__description-paragraph">We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.</p>
+      <section class="clients" id="clients">
+        <div class="wrapper">
+          <div class="description">
+            <h2 class="description__header description__header--dark">Our Clients Say</h2>
+            <h1 class="description__number">04</h1>
+            <p class="description__paragraph description__paragraph--dark">We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.</p>
           </div>
           <div class="clients__opinions">
-            <img src="./../photos/clients/stock-photo-159577399.png" class="opinions__image"/>
+            <img src="./../photos/clients/stock-photo-159577399.png"  alt="photo of client" class="opinions__image"/>
             <p class="opinions__quote-mark">“</p>
             <div class="opinions__description">
               <p class="opinions__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
@@ -240,27 +250,29 @@
             </div>
           </div>
           <ul class="clients__dots">
-            <li class="dot-1">•</li>
-            <li class="dot-2">•</li>
-            <li class="dot-3">•</li>
+            <li class="clients__dot clients__dot-1">•</li>
+            <li class="clients__dot clients__dot-2">•</li>
+            <li class="clients__dot clients__dot-3">•</li>
           </ul>
         </div>
-      </div>
+      </section>
 
       <!-- PUBLICATIONS -->
-      <div class="publications" id="publications">
-        <div class="publications__wrapper">
-          <div class="publications__description">
-            <h2 class="publications__description-header">Recent Publications</h2>
-            <h1 class="publications__number">05</h1>
-            <p class="publications__description-paragraph">We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.</p>
+      <section class="publications" id="publications">
+        <div class="wrapper">
+          <div class="description">
+            <h2 class="description__header description__header--light">Recent Publications</h2>
+            <h1 class="description__number">05</h1>
+            <p class="description__paragraph description__paragraph--light">We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.</p>
           </div>
           <div class="publications__articles">
             <div class="article">
-              <img src="./photos/publications/stock-photo-168251239.png" />
+              <img src="./photos/publications/stock-photo-168251239.png" alt="article photo"/>
               <p class="article__title">Publication Title</p>
               <div class="article__author-and-date">
-                <p class="article__author"><i style="color:#666666">By </i>Adam Suarez</p>
+                <div  class="article__author">
+                    <p><i style="color:var(--color3)">By </i>Adam Suarez</p>
+                </div>
                 <p class="article__date">12 Nov, 2015</p>
               </div>
               <p class="article__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p>
@@ -276,10 +288,10 @@
               </div>
             </div>
             <div class="article" id="">
-              <img src="./photos/publications/stock-photo-159856955.png" />
+              <img src="./photos/publications/stock-photo-159856955.png" alt="article photo"/>
               <p class="article__title">Publication Title</p>
               <div class="article__author-and-date">
-                <p class="article__author"><i style="color:#666666">By </i>Adam Suarez</p>
+                <p><i style="color:var(--color3)">By </i>Adam Suarez</p>
                 <p class="article__date">12 Nov, 2015</p>
               </div>
               <p class="article__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p>
@@ -295,10 +307,10 @@
               </div>
             </div>
             <div class="article">
-              <img src="./photos/publications/stock-photo-140302415.png" />
+              <img src="./photos/publications/stock-photo-140302415.png" alt="article photo"/>
               <p class="article__title">Publication Title</p>
               <div class="article__author-and-date">
-                <p class="article__author"><i style="color:#666666">By </i>Adam Suarez</p>
+                <p><i style="color:var(--color3)">By </i>Adam Suarez</p>
                 <p class="article__date">12 Nov, 2015</p>
               </div>
               <p class="article__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p>
@@ -315,15 +327,15 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- FAQ -->
-      <div class="faq" id="faq">
-        <div class="faq__wrapper">
-          <div class="faq__description">
-            <h2 class="faq__description-header">Frequently asked questions</h2>
-            <h1 class="publications__number">06</h1>
-            <p class="faq__description-paragraph">We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.</p>
+      <section class="faq" id="faq">
+        <div class="wrapper">
+          <div class="description">
+            <h2 class="description__header description__header--dark">Frequently asked questions</h2>
+            <h1 class="description__number">06</h1>
+            <p class="description__paragraph description__paragraph--dark">We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.</p>
           </div>
           <div class="faq__container">
             <div class="container__questions">
@@ -355,15 +367,15 @@
             <p class="container__paragraph">Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- CONTACT -->
-      <div class="contact" id="contact">
-        <div class="contact__wrapper">
-          <div class="contact__description">
-            <h2 class="contact__description-header">Feel Free to Contact</h2>
-            <h1 class="publications__number">07</h1>
-            <p class="contact__description-paragraph">We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.</p>
+      <section class="contact" id="contact">
+        <div class="wrapper">
+          <div class="description">
+            <h2 class="description__header description__header--light">Feel Free to Contact</h2>
+            <h1 class="description__number">07</h1>
+            <p class="description__paragraph description__paragraph--light">We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.</p>
           </div>
           <div class="contact__container">
             <form  action="https://formsubmit.co/pawelzygmuntkrol@gmail.com" method="POST" class="contact__input-fields">
@@ -373,14 +385,14 @@
               <textarea type="text" name="message" id="message" required placeholder="Enter Your Message..." class="contact__text-area" rows="4"></textarea>
               <button type="submit" class="contact__button" >Send Message</button>
             </form>
-            <img src="./photos/contact/Layer 1.png" class="contact__image"/>
+            <img src="./photos/contact/Layer 1.png"  alt="photo of our localization" class="contact__image"/>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- FOOTER -->
-      <div class="footer">
-        <div class="footer__wrapper">
+      <section class="footer">
+        <footer class="footer__wrapper">
           <div class="footer__copyright">
             <p class="footer__copyright-text">Copyright ©</p>
             <p class="footer__copyright-owner">&nbspSymu.co</p>
@@ -391,8 +403,8 @@
             <i class="fab fa-google-plus-g"></i>
             <i class="fab fa-instagram"></i>
           </div>
-        </div>
-      </div>
+        </footer>
+      </section>
 
       <!-- ACCESSIBILITY -->
       <div class="accessibility">
