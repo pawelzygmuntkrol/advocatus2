@@ -1,3 +1,80 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.accessibility {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--color1);
+  width: 100vw;
+  z-index: 5;
+}
+
+.accessibility__wrapper {
+  width: 1170px;
+  margin: 10px auto;
+}
+
+.accessibility__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accessibility__item {
+  font-size: var(--main-text);
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.accessibility__item:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+  .accessibility {
+    width: 100vw;
+  }
+  
+  .accessibility__wrapper {
+    width: 100%;
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  
+  .accessibility {
+    width: 100vw;
+  }
+  
+  .accessibility__wrapper {
+    width: 100%;
+    padding: 0 3rem;
+  }
+}
+
+/*
 .accessibility {
   position: fixed;
   top: 0;
@@ -54,3 +131,4 @@
     padding: 0 3rem;
   }
 }
+*/

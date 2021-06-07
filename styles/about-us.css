@@ -1,8 +1,145 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  min-height: 615px;
+  background-color: var(--color2);
+  scroll-margin-top: 50px;
+}
+
+.about-us__history-and-expertise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: var(--color1);
+}
+
+.history__wrapper {
+  width: 560px;
+}
+
+.history__header {
+  margin-bottom: 30px;
+  font-size: var(--font4);
+}
+
+.history__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  margin-bottom: 20px;
+  font-size: var(--font3);
+}
+
+.history__item-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70px;
+  margin-right: 30px;
+  font-size: var(--font3);
+  font-weight: bold;
+}
+
+.history__item-paragraph {
+  font-size: var(--font4);
+}
+
+.expertise__wrapper {
+  width: 530px;
+  margin-left: 35px;
+}
+
+.expertise__header {
+  margin-bottom: 30px;
+  font-size: var(--font4);
+}
+
+.expertise__paragraph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: var(--color3);
+  font-size: var(--font4);
+  line-height: 2.214;
+}
+
+@media (max-width: 1023px) {
+
+  .about-us__history-and-expertise {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .history__wrapper {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .expertise__wrapper {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .history__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/*
 .about-us {
   display: flex;
   width: 100vw;
   min-height: 615px;
   background-color: var(--color2);
+  scroll-margin-top: 50px;
 }
 
 .about-us__history-and-expertise {
@@ -13,7 +150,7 @@
 }
 
 .history__wrapper {
-  width: 55%;
+  width: 560px;
 }
 
 .history__header {
@@ -25,6 +162,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   margin-bottom: 20px;
   font-size: var(--font3);
 }
@@ -33,7 +171,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-right: 45px;
+  width: 70px;
+  margin-right: 30px;
   font-size: var(--font3);
   font-weight: bold;
 }
@@ -43,8 +182,8 @@
 }
 
 .expertise__wrapper {
-  width: 45%;
-  margin-left: 30px;
+  width: 530px;
+  margin-left: 35px;
 }
 
 .expertise__header {
@@ -86,3 +225,4 @@
     flex-direction: column;
   }
 }
+*/

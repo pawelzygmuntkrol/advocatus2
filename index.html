@@ -110,19 +110,6 @@
           <li class="hero-banner__dot hero-banner__dot-3">•</li>
         </ul>
       </div>
-      <!--
-      <div class="slider">
-        <div class="imgs">
-          <div class="img" style="left: 0;"> 
-          </div>
-          <div class="img">
-          </div>
-          <div class="img">
-          </div>
-        </div>
-        <div class="dots"></div>
-      </div>
-              -->
 
       <!-- ABOUT US -->
       <section class="about-us" id="about-us">
@@ -176,7 +163,7 @@
               <div class="practis-area__grid-item">
                 <i class="fas fa-wrench"></i>
                 <div>
-                  <h3 class="grid-item__header">LABOUR AND EMPLOYMENT</h3>
+                  <h3 class="grid-item__header">Labour And Employment</h3>
                   <p class="grid-item__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.</p>
                 </div>
               </div>
@@ -378,12 +365,13 @@
             <p class="description__paragraph description__paragraph--light">We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.</p>
           </div>
           <div class="contact__container">
-            <form  action="https://formsubmit.co/pawelzygmuntkrol@gmail.com" method="POST" class="contact__input-fields">
+            <form action="" method="POST" class="contact__input-fields">
               <input type="text" name="name" id="name" required placeholder="Enter your name..." class="contact__input">
               <input type="email" name="email" id="email" required placeholder="Enter your email..." class="contact__input">
-              <input type="number" name="phone-number" id="number" required placeholder="Enter your phone..." class="contact__input">
+              <input type="tel" name="number" id="number" required placeholder="Enter your phone..." class="contact__input">
               <textarea type="text" name="message" id="message" required placeholder="Enter Your Message..." class="contact__text-area" rows="4"></textarea>
-              <button type="submit" class="contact__button" >Send Message</button>
+              <button type="submit" id="submit" class="contact__button" >Send Message</button>
+              <input type="hidden" name="_next" value="https://advocatus.netlify.com">
             </form>
             <img src="./photos/contact/Layer 1.png"  alt="photo of our localization" class="contact__image"/>
           </div>
@@ -431,6 +419,7 @@
     <script src="./scripts/sideNav.js"></script>
     <script src="./scripts/hero-banner.js"></script>
     <script src="./scripts/clients.js"></script>
+    <script src="./scripts/validator.js"></script>
     <script src="./scripts/faq.js"></script>
   </body>
 </html>

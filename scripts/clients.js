@@ -29,14 +29,18 @@ let num = 1;
 // Function that changes image and text based on chosen dot and also changes the dot color.
 function changeClient(num) {
   document.querySelector(".opinions__image").src = clients[num].image;
-  document.querySelector(".opinions__paragraph").innerHTML = clients[num].opinion;
+  document.querySelector(".opinions__paragraph").innerHTML =
+    clients[num].opinion;
   document.querySelector(".opinions__name").innerHTML = clients[num].name;
-  document.querySelector(".opinions__position").innerHTML = clients[num].position;
+  document.querySelector(".opinions__position").innerHTML =
+    clients[num].position;
   for (let i = 1; i <= Object.keys(clients).length; i++) {
     if (i === num) {
-      document.querySelector(`.clients__dot-${i}`).style.color = "var(--color7)";
+      document.querySelector(`.clients__dot-${i}`).style.color =
+        "var(--color7)";
     } else {
-      document.querySelector(`.clients__dot-${i}`).style.color = "var(--color3)";
+      document.querySelector(`.clients__dot-${i}`).style.color =
+        "var(--color3)";
     }
   }
 }
@@ -57,7 +61,6 @@ setInterval(() => {
   changeClient(num);
   num++;
 }, 3000);
-
 
 /*
 document.querySelector(".dot-1").addEventListener("click", () => {

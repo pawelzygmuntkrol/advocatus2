@@ -1,8 +1,76 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.attorney {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 750px;
+  background-color: var(--color2);
+  scroll-margin-top: 50px;
+}
+
+.attorney__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 30px;
+      grid-template-areas:
+    ". . . .";
+  width: 100%;
+}
+
+.list__name {
+  color: var(--color1);
+  margin-top: 30px;
+  font-size: var(--font3);
+}
+
+.list__position {
+  font-size: var(--font5);
+  color: var(--color3);
+}
+
+@media (max-width: 1000px) {
+
+  .attorney {
+    height: auto;
+  }
+
+  .attorney__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .attorney__item {
+    margin-bottom: 25px;
+  }
+}
+
+/*
 .attorney {
   display: flex;
   width: 100vw;
   height: 750px;
   background-color: var(--color2);
+  scroll-margin-top: 50px;
 }
 
 .attorney__list {
@@ -43,3 +111,4 @@
     margin-bottom: 25px;
   }
 }
+*/

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* USED IN HERO-BANNER, ABOUT-US, PRACTISE-AREA, ATTORNEYS, CLIENTS, PUBLICATIONS, FAQ, CONTACT, FOOTER */
 
 /* PLAYFAIR FONT */
@@ -32,6 +39,140 @@
 /* USED IN ABOUT-US, PRACTISE-AREA, ATTORNEYS, CLIENTS, PUBLICATIONS, FAQ, CONTACT */
 
 /* DESCRIPTION */
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100px;
+  width: 100vw;
+  padding-left: 20px;
+  border-left: var(--border);
+  margin-bottom: 70px;
+}
+
+.description__number {
+  height: 0;
+  color: var(--color4);
+  font-size: var(--font0);
+  font-weight: 500;
+  line-height: 0.15;
+  opacity: 0.2;
+}
+
+.description__header {
+  font-size: var(--font2);
+  font-weight: 500;
+  line-height: 0.8;
+}
+
+.description__header--light {
+  color: var(--color1);
+}
+
+.description__header--dark {
+  color: var(--color6);
+}
+
+.description__paragraph {
+  max-width: 760px;
+  margin-top: 5px;
+  font-size: var(--font3);
+  line-height: 1.1;
+}
+
+.description__paragraph--light {
+  color: var(--color3);
+}
+
+.description__paragraph--dark {
+  color: var(--color4);
+}
+
+@media (max-width: 425px) {
+  
+  .description__header {
+    font-size: var(--font3);
+  }
+
+  .description__number {
+    font-size: var(--font0);
+    line-height: 0.20;
+  }
+  
+  .description__paragraph {
+    font-size: var(--font5);
+  }
+}
+
+/* WRAPPER */
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1100px;
+  margin: 100px auto 50px;
+}
+
+@media (max-width: 1024px) {
+  
+  .wrapper {
+    width: 100%;
+    padding: 0 3rem;
+  }
+
+}
+
+
+/*
+.hero-banner__name,
+.hero-banner__button,
+.about-us__description-header,
+.about-us__description-paragraph,
+.history__header,
+.expertise__header,
+.practis-area__description-header,
+.practis-area__description-paragraph,
+.grid-item__header,
+.attorney__description-header,
+.attorney__description-paragraph,
+.list__name,
+.clients__description-header,
+.clients__description-paragraph,
+.opinions__quote-mark,
+.opinions__name,
+.publications__description-header,
+.publications__description-paragraph,
+.article__title,
+.faq__description-header,
+.faq__description-paragraph,
+.contact__description-header,
+.contact__description-paragraph,
+.contact__button,
+.footer__copyright-text {
+  font-family: var(--Playfair);
+}
 
 .description {
   display: flex;
@@ -99,8 +240,6 @@
   }
 }
 
-/* WRAPPER */
-
 .wrapper {
   display: flex;
   justify-content: flex-start;
@@ -118,3 +257,4 @@
   }
 
 }
+*/

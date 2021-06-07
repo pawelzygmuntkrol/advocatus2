@@ -1,3 +1,103 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 80px;
+  background-color: #111111;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  width: 1100px;
+  margin: 0 auto;
+  color: var(--color6);
+}
+
+.footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: var(--font4);
+}
+
+.footer__copyright-text {
+  color: var(--color4);
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: var(--font4);
+  width: 110px;
+}
+
+.fa-facebook-f:hover,
+.fa-twitter:hover,
+.fa-google-plus-g:hover,
+.fa-instagram:hover {
+  cursor: pointer;
+  padding-bottom: 5px;
+  border-bottom: solid 3px var(--orange);
+}
+
+@media (max-width: 1024px) {
+
+  .footer {
+    padding: 0 3rem;
+  }
+
+  .footer__copyright {
+    font-size: var(--font5);
+  }
+  
+  .footer__wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .footer__wrapper {
+    width: 70%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+}
+
+/*
 .footer {
   display: flex;
   width: 100vw;
@@ -9,7 +109,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   width: 1100px;
   margin: 0 auto;
   color: var(--color6);
@@ -48,8 +148,22 @@
   .footer {
     padding: 0 3rem;
   }
+
+  .footer__copyright {
+    font-size: var(--font5);
+  }
   
   .footer__wrapper {
     width: 100%;
   }
 }
+
+@media (max-width: 425px) {
+
+  .footer__wrapper {
+    width: 70%;
+    justify-content: center;
+  }
+
+}
+*/

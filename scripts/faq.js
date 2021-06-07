@@ -9,7 +9,7 @@ const answers = {
   6: "`Content here, content here`, making it look like readable English.Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using "
 };
 
-// Loops through questions and checks if the clicked one has a class of active, if not adds it and removes this class from previously clicked (or default) question. 
+// Loops through questions and checks if the clicked one has a class of active, if not adds it and removes this class from previously clicked (or default) question.
 // Changes + / - sign and reloads right answer to the question.
 for (let i = 1; i < questions.length + 1; i++) {
   document
