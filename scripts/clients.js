@@ -62,18 +62,3 @@ setInterval(() => {
   num++;
 }, 3000);
 
-/*
-document.querySelector(".dot-1").addEventListener("click", () => {
-  changeClient(1);
-  num = 1;
-});
-
-document.querySelector(".dot-2").addEventListener("click", () => {
-  changeClient(2);
-  num = 2;
-});
-
-document.querySelector(".dot-3").addEventListener("click", () => {
-  changeClient(3);
-  num = 3;
-});*/
